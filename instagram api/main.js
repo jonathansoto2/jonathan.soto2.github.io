@@ -69,7 +69,7 @@ second_request.onload = function(){
 
 
 };
-console.log("is this updating");
+
 
 first_request.send();
 second_request.send();
