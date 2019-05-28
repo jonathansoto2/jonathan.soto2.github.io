@@ -25,7 +25,7 @@ first_request.onload = function(){
     var follower_count = document.createElement("H2");
     follower_count.setAttribute("class", "followers");
 
-    follower_count.innerText = "@" + profile_data.data.username + " " + "has " + profile_data.data.counts.follows + " " + "followers";
+    follower_count.innerText = "@" + profile_data.data.username + " " + "has " + profile_data.data.counts.followed_by + " " + "followers";
     main.appendChild(follower_count);
 
 
