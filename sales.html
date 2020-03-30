@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sales.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>	
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+</head>
+<body>
+
+    <div class="container" >
+            <img class="company-logo" src="photos/companylogo.png" id="company-logo" alt="">
+        <div class="sale-buttons">
+            <input id="sale-amount" type="text" value="" placeholder="Enter sale amount here">
+            <input id="add-button" type="submit" value="ADD" onclick="addSale()">
+        </div>
+            <table id="sales-table" >
+                <tr class="sales-row">
+                    <th></th>
+                    <th>Sale</th>
+                    <th>Commission</th>
+                    <th>Date</th>
+                </tr>
+                
+            </table>
+
+
+
+
+    </div>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCQ1kCNNjJSXiraL65Loj0ATGDCfdoFfe8",
+          authDomain: "icon-employee-portal.firebaseapp.com",
+          databaseURL: "https://icon-employee-portal.firebaseio.com",
+          projectId: "icon-employee-portal",
+          storageBucket: "icon-employee-portal.appspot.com",
+          messagingSenderId: "205131706360",
+          appId: "1:205131706360:web:5a422a8035c11cb1f8f00d",
+          measurementId: "G-RBSKTK1M6D"
+        };
+        // Initialize Firebase
+        if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+        firebase.analytics();
+        
+      </script> 
+    <script src="sales.js"></script>
+</body>
+</html>

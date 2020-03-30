@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    
+</head>
+
+<body>
+
+    
+
+    <div id="login-div" class="login-container">
+            <img src="photos/Icon-Logo-home.jpeg" alt="" class="login-logo">
+            <h1 class="home-text">Icon Employee Portal</h1>
+            <h2 class="home-text"> Login here:</h2>
+        <div class="inputs">
+            <input type="employeeID" placeholder="Employee Email..." id="email_field">
+            <input type="password" placeholder="password..." id="password_field">
+            <button id="signin-button" onclick="login()">Login!</button>
+        </div>
+        
+    </div>
+
+
+            <!-- USER VIEW ONCE LOGGED IN-->
+    <div id="user-div" class="loggedin-container" >
+
+        <img src="photos/Icon-Logo-home.jpeg" id="company-logo" alt="">
+
+            <button id="signout-button" onclick="signout()">Signout!</button>
+
+            <div class="para" id="first-para" ><h1 class="button-title">Timeclock</h1></div>
+            <div class="para" id="second-para"><h1 class="button-title">Request PTO</h1></div>
+            <div class="para" id="third-para"><h1 class="button-title">Sales</h1></div>
+           <div class="icon"> <input type="image" src="photos/clocklogo2.png" class="time-clock-button" onclick="timeclock()" ></div>
+            <div class="icon-two"><input type="image" src="photos/calendarlogo.png" class="calendar-button" onclick="requestPTO()"></div>
+            <div class="icon-three"><input type="image" src="photos/dollarlogo2.png" class="sales-button" onclick="sales()"></div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+<script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCQ1kCNNjJSXiraL65Loj0ATGDCfdoFfe8",
+          authDomain: "icon-employee-portal.firebaseapp.com",
+          databaseURL: "https://icon-employee-portal.firebaseio.com",
+          projectId: "icon-employee-portal",
+          storageBucket: "icon-employee-portal.appspot.com",
+          messagingSenderId: "205131706360",
+          appId: "1:205131706360:web:5a422a8035c11cb1f8f00d",
+          measurementId: "G-RBSKTK1M6D"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+
+<script src="index.js"></script>
+</body>
+
+</html>

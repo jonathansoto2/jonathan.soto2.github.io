@@ -1,0 +1,57 @@
+table, th , td{
+    border: 1px solid #000;
+}
+
+th, td{
+    padding: 7px;
+}
+
+.sales-row{
+    background:rgba(60,182,233,1) 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.company-logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: block;
+}
+
+.sale-buttons{
+    height: 35px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#sale-amount{
+    width: 80%;
+    height: 30px;
+}
+
+#add-button{
+    width: 15%;
+    border: 1px solid #000;
+    height: 37px;
+}
+
+#add-button:hover{
+    background: #000;
+    color: aqua;
+    cursor: pointer;
+}
+
+#sales-table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    margin-top: 50px;
+}

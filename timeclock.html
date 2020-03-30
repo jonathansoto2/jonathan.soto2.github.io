@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="timeclock.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>	
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-database.js"></script>
+</head>
+<body>
+
+    <div class="container" >
+            <img class="company-logo" src="photos/companylogo.png" id="company-logo" alt="">
+
+            <div class="buttons">
+                <input id="clockin-button" class="timeclock-buttons" type="button" value="Clock in" onclick="clockin()">
+                <input id="clockout-button" class="timeclock-buttons" type="button" value="Clock out" onclick="clockout()">
+            </div>
+        
+            <p id="clockedin"></p>
+        
+            <p id="clockedout"></p>
+        
+            <table id="time-table" >
+                
+                <tr id="punch-row" >
+                    <th></th>
+                    <th>Time in</th>
+                    <th>Time out</th>
+                </tr>
+                <tr id="Monday"> <th> Monday </th></tr>
+                <tr id="Tuesday"><th> Tuesday </th></tr>
+                <tr id="Wednesday" ><th> Wednesday </th></tr>
+                <tr id="Thursday" ><th> Thursday</th></tr>
+                <tr id="Friday"><th> Friday </th></tr>
+            </table>
+        
+        
+    </div>
+
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCQ1kCNNjJSXiraL65Loj0ATGDCfdoFfe8",
+          authDomain: "icon-employee-portal.firebaseapp.com",
+          databaseURL: "https://icon-employee-portal.firebaseio.com",
+          projectId: "icon-employee-portal",
+          storageBucket: "icon-employee-portal.appspot.com",
+          messagingSenderId: "205131706360",
+          appId: "1:205131706360:web:5a422a8035c11cb1f8f00d",
+          measurementId: "G-RBSKTK1M6D"
+        };
+        // Initialize Firebase
+        if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+        firebase.analytics();
+        
+      </script> 
+    <script src="timeclock.js"></script>
+</body>
+</html>

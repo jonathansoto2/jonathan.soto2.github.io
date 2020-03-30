@@ -1,0 +1,175 @@
+body{
+    background-color: #3CB6E9;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.home-text{
+    color: white;
+}
+.login-logo{
+    height: 200px;
+    width: 500px;
+}
+
+.inputs{
+    display: inline-block;
+}
+
+#signin-button{
+    display: block;
+    height: 30px;
+    width: 65px;
+    margin-left:20px;
+}
+
+#signout-button{
+    height: 30px;
+    width: 65px;
+}
+
+#signout-button:hover{
+    cursor: pointer;
+}
+
+#user-div{
+    height:100vh;
+    display: none;
+    grid-template-columns: auto 25% 25% 25% auto;
+    grid-template-rows: 100px 150px 50px 175px 175px;
+
+}
+
+#company-logo{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    height: 200px;
+    width: 500px;
+}
+
+
+.button-title{
+    transform: skew(20deg);
+    font-size: 2vw;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    color: #3CB6E9;
+}
+
+
+.para{
+    transform: skew(-20deg);
+    background: white;
+    height: 60px;
+    width: 150px;
+}
+
+#first-para{
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.time-clock-button {
+    height: 80%;
+    width: 80%;
+}
+
+.sales-button{
+    height: 90%;
+    width: 90%;
+    
+}
+
+.calendar-button{
+    height: 100%;
+    width:100%;
+    margin: 0;
+}
+
+
+.icon{ 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    place-self: center;
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    background: white;
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+
+#second-para{
+    justify-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+
+.icon-two{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    place-self: center;
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    background: white;
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+#third-para{
+    justify-self: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.icon-three{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    place-self: center;
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    background: white;
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+input {
+    display: block;
+    margin: 20px;
+    height: 30px;
+    width:250px;
+    outline: none;
+}
+.login-container{
+    text-align:center;
+}
